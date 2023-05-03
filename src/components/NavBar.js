@@ -6,24 +6,17 @@ import CartScreen from "../screen/CartScreen";
 const NavBar = () => {
   return (
     <>
-      <nav class="navbar navbar-dark bg-primary bg-body-tertiary ">
-        <div class="container-fluid  ">
+      <nav className="navbar navbar-dark bg-primary bg-body-tertiary ">
+        <div className="container-fluid  ">
           <Link class="navbar-brand" to="/">
             Shop
           </Link>
-          <button
-            class="navbar-toggler "
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+
             <Link to="/cart" className="nav-link">
+
               <AiOutlineShoppingCart />
             </Link>
-          </button>
+
         </div>
       </nav>
       <Routes>
